@@ -6,6 +6,9 @@
         "php": ">= 7.0",
         "guzzlehttp/guzzle": "^6.3@dev"
     },
+    "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+    },
     "license": "MIT",
     "authors": [
         {
