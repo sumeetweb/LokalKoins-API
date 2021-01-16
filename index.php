@@ -39,7 +39,7 @@ $client = new GuzzleHttp\Client();
 //Save some exchange data to exchangeInfo.json
 if(!file_exists('exchangeInfo.json')){
     $data = file_get_contents('https://api.binance.com/api/v3/exchangeInfo');
-    $put = file_put_contents('exchangeInfo.json', $get);
+    $put = file_put_contents('exchangeInfo.json', $data);
 }
 $result = json_decode(file_get_contents('exchangeInfo.json'), true);
 
