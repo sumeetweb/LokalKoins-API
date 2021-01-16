@@ -16,5 +16,8 @@ or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## How to Fetch?
-http://lokalkoins.test/?currency=USD
+## DEMO
+https://lokalkoins.herokuapp.com/?currency=INR
+  
+For currency list :  
+https://lokalkoins.herokuapp.com/
