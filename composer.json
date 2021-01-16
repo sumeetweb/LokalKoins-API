@@ -1,7 +1,7 @@
 {
-    "name": "benmajor/exchange-rates-api",
-    "description": "An unofficial SDK for the ExchangeRatesAPI. (https://exchangeratesapi.io/)",
-    "type": "library",
+    "name": "sumeetweb/lokalkoins-api",
+    "description": "An API to fetch price of cryptocurrency in different fiat currencies",
+    "type": "api",
     "require": {
         "php": ">= 7.0",
         "guzzlehttp/guzzle": "^6.3@dev"
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Ben Major",
-            "email": "ben.major88@gmail.com"
+            "name": "Sumeet",
+            "email": "hi@sumeet.xyz"
         }
     ],
     "minimum-stability": "dev",
