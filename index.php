@@ -39,7 +39,7 @@ $client = new GuzzleHttp\Client();
 //Save some exchange data to exchangeInfo.json
 if(!file_exists('exchangeInfo.json')){
     $data = file_get_contents('https://api.binance.com/api/v3/exchangeInfo');
-    $put = file_put_contents('exchangeInfo.json', $data);
+    $put = file_put_contents('exchangeInfo.json', $get);
 }
 $result = json_decode(file_get_contents('exchangeInfo.json'), true);
 
@@ -91,16 +91,22 @@ foreach($result['symbols'] as $symbol) {
 
     foreach($result2 as $res2) {
         if($symbol['symbol'] == $res2['symbol'] && $multiplyby !== 0) {
-            $pairs[$symbol['baseAsset']] = array();
+            $pairs[$symbol['baseAsset']] = $multiplyby * $res2['price']; // Simplify some more.... array();
+            
+            /*
+
             $pairs[$symbol['baseAsset']]['asset'] = $symbol['baseAsset'];
             $pairs[$symbol['baseAsset']]['price'] = $multiplyby * $res2['price'];
+            
+            */
+            
             $multiplyby = 0;
             break;
         }
     }
 }
 
-$response['message'] = 'Success';
+$response['message'] = 'success';
 $response['baseCurrency'] = $currency;
 $response['count'] = count($pairs);
 $response['rates'] = $pairs;
