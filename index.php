@@ -15,7 +15,7 @@ $response['status'] = 200;
 $response['message'] = null;
 
 if(isset($_GET["currency"])){
-    $currency = htmlentities($_GET["currency"]);
+    $currency = strtoupper(htmlentities($_GET["currency"]));
 }
 else{
     $currency = null;
