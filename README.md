@@ -16,8 +16,12 @@ or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+
 ## DEMO
+
 https://lokalkoins.herokuapp.com/?currency=INR
   
 For currency list :  
-https://lokalkoins.herokuapp.com/
+https://lokalkoins.herokuapp.com/  
+
+Watch Lokalkoins INR Feed on Telegram : https://t.me/s/lokalkoinsinrfeed
