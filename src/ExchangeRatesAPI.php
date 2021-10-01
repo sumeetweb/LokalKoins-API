@@ -32,7 +32,7 @@ class ExchangeRatesAPI
     private $client;
     
     # The URL of the API:
-    private $apiURL = 'https://api.exchangeratesapi.io/';
+    private $apiURL = 'https://api.exchangerate.host/';
     
     # Regular Expression for the date:
     private $dateRegExp = '/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/';
